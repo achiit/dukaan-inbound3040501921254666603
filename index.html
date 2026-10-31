@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="HSC Studio - Photography and videography, wedding shoots and album design. Available all India.">
+<title>HSC Studio | Photography & Videography</title>
+<style>
+:root{--ink:#171717;--muted:#666;--gold:#b38b45;--paper:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:#fff;line-height:1.6}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);border-bottom:1px solid #eee;z-index:5}
+.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;font-family:Arial,sans-serif}
+.brand{font-size:21px;font-weight:800;letter-spacing:2px}.brand span{color:var(--gold)}
+.nav a{color:#222;text-decoration:none}
+.nav .links{display:flex;gap:20px;font-size:14px}
+.hero{min-height:calc(100vh - 58px);display:flex;align-items:center;justify-content:center;text-align:center;padding:38px 18px;background:linear-gradient(#ffffffdc,#ffffffea),url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1600&q=80') center/cover}
+.hero-inner{max-width:780px}
+.profile{width:220px;height:220px;border-radius:50%;object-fit:cover;border:5px solid white;box-shadow:0 5px 22px #0003;margin-bottom:20px}
+h1{font-size:clamp(42px,8vw,76px);font-weight:400;letter-spacing:1px;line-height:1.08}
+.camera{font-family:Arial,sans-serif;font-size:.6em;vertical-align:middle}
+.phone{font-size:clamp(24px,4vw,34px);letter-spacing:3px;margin:5px 0 20px}
+.contact-row{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin:14px 0}
+.contact-row a{color:#222;text-decoration:underline;text-underline-offset:5px;font-size:17px;overflow-wrap:anywhere}
+.tagline{font-size:clamp(17px,3vw,25px);letter-spacing:1px;margin-top:24px}
+.rule{height:2px;background:#222;max-width:590px;margin:5px auto 8px}
+.avail{font-size:21px;letter-spacing:2px}
+.btn{display:inline-block;margin-top:25px;padding:13px 30px;border:0;border-radius:3px;background:#171717;color:#fff;text-decoration:none;font: bold 15px Arial,sans-serif;letter-spacing:.5px;cursor:pointer}
+.btn:hover{background:var(--gold);color:#111}
+.details{display:none;padding:70px 20px;background:#faf8f4;scroll-margin-top:70px}
+.details.show{display:block}
+.wrap{max-width:1000px;margin:auto}
+h2{text-align:center;font-size:38px;font-weight:400;margin-bottom:12px}
+.intro{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.item{background:#fff;border:1px solid #eee;padding:24px;text-align:center}
+.item h3{font-size:22px;font-weight:400;margin-bottom:8px}.item p{font-family:Arial,sans-serif;color:#666;font-size:14px}
+.contact-box{text-align:center;margin-top:36px;padding:28px;background:#fff;border:1px solid #eee}
+.contact-box a{color:#222}
+footer{text-align:center;padding:22px;background:#171717;color:#ddd;font:13px Arial,sans-serif}
+.wa{position:fixed;right:17px;bottom:17px;background:#20bd65;color:white;padding:13px 18px;border-radius:40px;text-decoration:none;font: bold 14px Arial,sans-serif;box-shadow:0 4px 14px #0003;z-index:9}
+@media(max-width:650px){.nav{flex-direction:column;gap:8px}.nav .links{gap:13px;flex-wrap:wrap;justify-content:center}.profile{width:180px;height:180px}.grid{grid-template-columns:1fr}h2{font-size:32px}.contact-row{gap:12px}.contact-row a{font-size:15px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="brand" href="#home">HSC <span>STUDIO</span></a><div class="links"><a href="#home">Home</a><a href="#details" onclick="showDetails(event)">Details</a></div></div></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+<img class="profile" src="hsc-studio-profile.jpg" alt="HSC Studio photographer profile">
+<h1><span class="camera">📷</span> HSC STUDIO</h1>
+<div class="phone">7415798521</div>
+<div class="contact-row">
+<a href="mailto:himanshuphotography@gmail.com">himanshuphotography@gmail.com</a>
+<a href="https://instagram.com/hsc_photography_seoni" target="_blank" rel="noopener">@hsc_photography_seoni</a>
+</div>
+<div class="tagline">PHOTOGRAPHY &amp; VIDEOGRAPHY</div><div class="rule"></div>
+<div class="avail">AVAILABLE ALL INDIA</div>
+<button class="btn" onclick="showDetails()">VIEW ALL DETAILS ↓</button>
+</div></section>
+<section class="details" id="details"><div class="wrap">
+<h2>HSC Studio – Our Services</h2>
+<p class="intro">We capture your special moments and turn them into memories. Contact us for bookings and availability across India.</p>
+<div class="grid">
+<div class="item"><h3>Wedding Photography</h3><p>Wedding day moments, rituals and celebrations.</p></div>
+<div class="item"><h3>Pre-Wedding Shoot</h3><p>Creative couple portraits and love stories.</p></div>
+<div class="item"><h3>Photography</h3><p>Portraits, candid moments and special occasions.</p></div>
+<div class="item"><h3>Videography</h3><p>Event films and cinematic video coverage.</p></div>
+<div class="item"><h3>Album Designing</h3><p>Beautifully designed albums for your memories.</p></div>
+<div class="item"><h3>All India Availability</h3><p>Get in touch to discuss your location and date.</p></div>
+</div>
+<div class="contact-box">
+<h3 style="font-size:25px;font-weight:400">Book Your Shoot</h3>
+<p>Call: <a href="tel:+917415798521">7415798521</a></p>
+<p>Email: <a href="mailto:himanshuphotography@gmail.com">himanshuphotography@gmail.com</a></p>
+<p>Instagram: <a href="https://instagram.com/hsc_photography_seoni" target="_blank" rel="noopener">@hsc_photography_seoni</a></p>
+<a class="btn" href="https://wa.me/917415798521?text=Hello%20HSC%20Studio%2C%20I%20want%20to%20enquire%20about%20a%20booking." target="_blank" rel="noopener">BOOK ON WHATSAPP</a>
+</div></div></section>
+</main>
+<footer>© 2026 HSC Studio · Photography &amp; Videography · Available All India</footer>
+<a class="wa" href="https://wa.me/917415798521" target="_blank" rel="noopener">WhatsApp</a>
+<script>
+function showDetails(e){if(e)e.preventDefault();const d=document.getElementById('details');d.classList.add('show');d.scrollIntoView({behavior:'smooth'});}
+</script>
+</body></html>
